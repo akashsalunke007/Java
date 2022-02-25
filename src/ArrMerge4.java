@@ -86,12 +86,5 @@ class ArrMarge4
 		{
 			System.out.print(o);
 		}
-		
-		
-		
-		
-		
-		
 	}
-	
 }
