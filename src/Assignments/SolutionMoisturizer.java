@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class Solution {
+public class SolutionMoisturizer {
 
 	public static void main(String[] args) {
 
@@ -21,8 +21,12 @@ public class Solution {
 			mz.add(new Moisturizer(mId, mName, pr, bName));
 		}
 		
+		sc.nextLine();
 		String brand = sc.nextLine();
+		
+
  		
+		
 		
 		if (getHighestPriceMoisturizerByBrandName(mz, brand)!=null) {
 			Moisturizer obj = getHighestPriceMoisturizerByBrandName(mz, brand);
@@ -38,7 +42,7 @@ public class Solution {
 	}
 
 	public static Moisturizer getHighestPriceMoisturizerByBrandName(ArrayList<Moisturizer> list, String brand) {
-		Collections.sort((List) list);
+		Collections.sort(list);
 		Collections.reverse(list);
 		
 		for(int i = 0; i < 2; i++) {

@@ -1,6 +1,6 @@
 package Assignments;
 
-public class Moisturizer {
+public class Moisturizer implements Comparable<Moisturizer>{
 	
 	private int moisturizerId;
 	private String moisturizerName;
@@ -28,8 +28,19 @@ public class Moisturizer {
 		return brandName;
 	}
 	
+	
+	
+	
+	
+	@Override
 	public String toString() {
 		return price+"";
+	}
+
+	@Override
+	public int compareTo(Moisturizer o) {
+		
+		return Integer.compare(this.price, o.price);
 	}
 	
 }
